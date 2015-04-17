@@ -473,12 +473,16 @@ Section
 	</ol>
 
 	<p class='answer'>
-	From what we know with trains, it would be nice to also know about outages that may be happening at a station for a given date that might influence the data.
+	<i>I went with the Mann-Whitney U-test and OLS using Statsmodels. Since we rejected the null hypothesis with a p value of 0.049, that suggests to me that there's not enough evidence to actually reject the null hypothesis and say if rain influences ridership with this set of analysis; the plot further convinces me of this. This is just a shortcoming of my analysis. From my experience with riding trains, the hours spans influences my decision on taking the train. From the sheer number of people who needs to get to work (or come home from work) during rush hour, I suspect that scoping the data to rush hour hours might show something interesting. A reformulation of the problem would be to explore the ridership for rain vs no rain during rush hour (6am - 10am & 4 to 8pm) on weekdays.</i>
 	</p>
 	<p style="margin-left: 0.05in; margin-right: 0.05in; margin-bottom: 0in; font-variant: normal; font-style: normal; font-weight: normal">
 	<font color="#222222"><font face="Helvetica Neue"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">5.2
 	(Optional) Do you have any other insight about the dataset that you
 	would like to share with us?</span></font></font></font></p>
+		<p class='answer'>
+	<i>
+	Turns out that an analysis of the data using Mann-Whitney U-test and scoping to the mentioned rush hours, we have a p value of 0.12672. That is believable because the pressure of getting to your workplace on time is more important than some wet weather. Clearly, further analysis is needed but that's what I would explore as a follow up.</i>
+	</p>
 </div>
 <div id="footer" dir="ltr">
 	<p style="margin-bottom: 0in; border: none; padding: 0in"><span style="font-variant: normal"><font color="#000000"><font face="arial, sans, sans-serif"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">Published
